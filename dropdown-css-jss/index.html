@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Dropdown</title>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-container">
+            <div class="profile-img-container">
+                <img src="user.jpg" class="profile-img">
+            </div>
+            <div class="user-info">
+                <div class="user-name">
+                    Miss Jully
+                    <i class="fas fa-caret-down" id="dropdown-icon"></i>
+                </div>
+                <div class="status">
+                    Loged in
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <span class="dropdown-head"></span>
+            <ul class="dropdown-list">
+                <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">
+                        <i class="far fa-user icon"></i>
+                        My Profile
+                    </a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">
+                        <i class="fas fa-chart-line icon"></i>
+                        My Activities
+                    </a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">
+                        <i class="fas fa-cog icon"></i>
+                        Settings
+                    </a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">
+                            <i class="fas fa-power-off icon"></i>
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

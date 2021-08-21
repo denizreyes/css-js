@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.page{
+  height: 100vh;
+}
+.parallax{
+  background: url('img/bg.png') no-repeat fixed center;
+  height: 500px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.parallax-inner{
+  text-align: center;
+  font-family: sans-serif;
+}
+.parallax-inner h1{
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 3px;
+}
+.parallax-inner h2{
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 1px;
+  font-weight: 500;
+}
