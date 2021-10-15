@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+    body{
+      background: beige;
+    }
+    .caja{
+      border: 1px solid rgb(70, 69, 69);
+      background: white;
+      color: rgb(77, 75, 75);
+      font-family:'Courier New', Courier, monospace;
+      font-weight: bold;
+      width: 120px;
+      line-height: 120px;
+      text-align: center;
+      margin: 5px;
+      /* float: left; */
+    }
+    .flex-container{
+      border: 1px solid black;
+      background: #ccc;
+      padding: 20px;
+      display: flex;
+      flex-direction: row; /*row column column-reverse row-reverse*/
+      flex-wrap: wrap; /*envoltorio | nowrap | wrap: acomoda los elementos*/
+     /* flex-flow: row wrap; */
+     justify-content: center; /*movimiento horizontal*/
+     /*
+      space-between: separacion entre ellos
+      space-around: mismo espacio de separacion entre ellos
+      center: centra las cajas en el centro del contenedor
+      flex-end: empieza al final
+      flex-start: empieza al inicio
+     */
+     height: 500px;
+     /*align-items: center;*/ /*movimiento vertical*/
+     align-content: center; /*alinea todo el conjunto*/
+    }
+    .c1{
+      background: lightblue;
+      order: 2; /*ordena el elemento*/
+      flex-grow: 5; /*modifica el espacio, mas prioridad*/
+      flex-basis: 50%;
+    }
+    .c2{
+      background: lightcoral;
+      order: 3;
+      flex-grow: 2; 
+    }
+    .c3{
+      background: lightgreen;
+      order: 1;
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+  <h1>Aprendiendo</h1>
+  <section class="flex-container">
+    <div class="caja c1">Caja 1</div>
+    <div class="caja c2">Caja 2</div>
+    <div class="caja c3">Caja 3</div>
+  </section>
+</body>
+</html>
